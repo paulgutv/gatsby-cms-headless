@@ -1419,6 +1419,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:7.16.7":
+  version: 7.16.7
+  resolution: "@babel/runtime@npm:7.16.7"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 47912f0aaacd1cab2e2552aaf3e6eaffbcaf2d5ac9b07a89a12ac0d42029cb92c070b0d16f825e4277c4a34677c54d8ffe85e1f7c6feb57de58f700eec67ce2f
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.18.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.19.0
   resolution: "@babel/runtime@npm:7.19.0"
@@ -2807,7 +2816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:2":
+"@types/node-fetch@npm:2, @types/node-fetch@npm:^2.5.7":
   version: 2.6.2
   resolution: "@types/node-fetch@npm:2.6.2"
   dependencies:
@@ -4301,7 +4310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
+"chokidar@npm:^3.4.2, chokidar@npm:^3.5.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -6126,6 +6135,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eventemitter3@npm:^4.0.4":
+  version: 4.0.7
+  resolution: "eventemitter3@npm:4.0.7"
+  checksum: 1875311c42fcfe9c707b2712c32664a245629b42bb0a5a84439762dd0fd637fc54d078155ea83c2af9e0323c9ac13687e03cfba79b03af9f40c89b4960099374
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -6585,7 +6601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.1.0":
+"fs-extra@npm:^10.0.0, fs-extra@npm:^10.1.0":
   version: 10.1.0
   resolution: "fs-extra@npm:10.1.0"
   dependencies:
@@ -6596,7 +6612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^9.0.0":
+"fs-extra@npm:^9.0.0, fs-extra@npm:^9.0.1":
   version: 9.1.0
   resolution: "fs-extra@npm:9.1.0"
   dependencies:
@@ -6735,7 +6751,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^3.22.0":
+"gatsby-core-utils@npm:3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-core-utils@npm:3.4.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: f9c82452c8a17adb27279b0a9e882c081a13865413a1f95b9de2df85b15896f769302de9dd706dc362a72df02fe041e7e4355ef8d0eb78bec7e5350824d45d57
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^3.22.0, gatsby-core-utils@npm:^3.4.0":
   version: 3.22.0
   resolution: "gatsby-core-utils@npm:3.22.0"
   dependencies:
@@ -6764,6 +6798,21 @@ __metadata:
   dependencies:
     "@babel/runtime": ^7.15.4
   checksum: 162320b367f8c3b48b33d5e565d1cc4823d0baab380eda80ea256a09b02adcf80dbf67c5c11945cb256f36224c43f0e4af2ab67f2a06537d32dcc8961f3b4c90
+  languageName: node
+  linkType: hard
+
+"gatsby-graphql-source-toolkit@npm:^2.0.1":
+  version: 2.0.2
+  resolution: "gatsby-graphql-source-toolkit@npm:2.0.2"
+  dependencies:
+    "@types/node-fetch": ^2.5.7
+    fs-extra: ^9.0.1
+    lodash: ^4.17.15
+    node-fetch: ^2.6.0
+    p-queue: ^6.4.0
+  peerDependencies:
+    gatsby: ^3.0.0 || ^4.0.0
+  checksum: bd68217c91bb35aebff3f10e891e32afc52f41398eb90bae7038df4e49a53f5cfcf97022334bbe5efc4c5e9ab28c7543ffe5a13006eb4c99c8210cae754defb4
   languageName: node
   linkType: hard
 
@@ -7001,6 +7050,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-source-filesystem@npm:4.4.0":
+  version: 4.4.0
+  resolution: "gatsby-source-filesystem@npm:4.4.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    chokidar: ^3.5.2
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.4.0
+    got: ^9.6.0
+    md5-file: ^5.0.0
+    mime: ^2.5.2
+    pretty-bytes: ^5.4.1
+    progress: ^2.0.3
+    valid-url: ^1.0.9
+    xstate: ^4.26.1
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 6ca190fdcfeb1b0ce17c1c3d38ac4b951f71adb7ec4ea110212de52dcb40006dc043775ed5bc8f4ee336c25a1d378ee0f2ba618163ed756e77ce75f97602993a
+  languageName: node
+  linkType: hard
+
 "gatsby-source-filesystem@npm:^4.22.0":
   version: 4.22.0
   resolution: "gatsby-source-filesystem@npm:4.22.0"
@@ -7020,6 +7092,41 @@ __metadata:
   checksum: 183c7a298cd6cacb79780066656d259159d48b7536e1874c21088fdfe4104150a63312ab7d201fc812dd8393454b709427e6a0f7ffc7c014ecc0add2d3894e31
   languageName: node
   linkType: hard
+
+"gatsby-source-graphcms@npm:^2.8.0":
+  version: 2.8.0
+  resolution: "gatsby-source-graphcms@npm:2.8.0"
+  dependencies:
+    "@babel/runtime": 7.16.7
+    gatsby-core-utils: 3.4.0
+    gatsby-graphql-source-toolkit: ^2.0.1
+    gatsby-source-filesystem: 4.4.0
+    he: 1.2.0
+    node-fetch: 2.6.1
+  peerDependencies:
+    gatsby: ^4.0.0
+    gatsby-plugin-image: ^2.0.0
+  checksum: 8db1292b987d5a043850776b436ce9e996365742a6730a5dd2078d24649eea8e1b27e8330890a792ceb619e21638f04df2fc73beffb8191d97f7b79e40e09262
+  languageName: node
+  linkType: hard
+
+"gatsby-starter-default@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gatsby-starter-default@workspace:."
+  dependencies:
+    gatsby: ^4.22.0
+    gatsby-plugin-image: ^2.22.0
+    gatsby-plugin-manifest: ^4.22.0
+    gatsby-plugin-sharp: ^4.22.0
+    gatsby-source-filesystem: ^4.22.0
+    gatsby-source-graphcms: ^2.8.0
+    gatsby-transformer-sharp: ^4.22.0
+    prettier: ^2.7.1
+    prop-types: ^15.8.1
+    react: ^18.1.0
+    react-dom: ^18.1.0
+  languageName: unknown
+  linkType: soft
 
 "gatsby-telemetry@npm:^3.22.0":
   version: 3.22.0
@@ -7451,7 +7558,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:^11.8.5":
+"got@npm:^11.8.3, got@npm:^11.8.5":
   version: 11.8.5
   resolution: "got@npm:11.8.5"
   dependencies:
@@ -9546,7 +9653,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.6, node-fetch@npm:^2.6.7":
+"node-fetch@npm:2.6.1":
+  version: 2.6.1
+  resolution: "node-fetch@npm:2.6.1"
+  checksum: 91075bedd57879117e310fbcc36983ad5d699e522edb1ebcdc4ee5294c982843982652925c3532729fdc86b2d64a8a827797a745f332040d91823c8752ee4d7c
+  languageName: node
+  linkType: hard
+
+"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.0, node-fetch@npm:^2.6.6, node-fetch@npm:^2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -10019,6 +10133,25 @@ __metadata:
   dependencies:
     aggregate-error: ^3.0.0
   checksum: cb0ab21ec0f32ddffd31dfc250e3afa61e103ef43d957cc45497afe37513634589316de4eb88abdfd969fe6410c22c0b93ab24328833b8eb1ccc087fc0442a1c
+  languageName: node
+  linkType: hard
+
+"p-queue@npm:^6.4.0":
+  version: 6.6.2
+  resolution: "p-queue@npm:6.6.2"
+  dependencies:
+    eventemitter3: ^4.0.4
+    p-timeout: ^3.2.0
+  checksum: 832642fcc4ab6477b43e6d7c30209ab10952969ed211c6d6f2931be8a4f9935e3578c72e8cce053dc34f2eb6941a408a2c516a54904e989851a1a209cf19761c
+  languageName: node
+  linkType: hard
+
+"p-timeout@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "p-timeout@npm:3.2.0"
+  dependencies:
+    p-finally: ^1.0.0
+  checksum: 3dd0eaa048780a6f23e5855df3dd45c7beacff1f820476c1d0d1bcd6648e3298752ba2c877aa1c92f6453c7dd23faaf13d9f5149fc14c0598a142e2c5e8d649c
   languageName: node
   linkType: hard
 
@@ -10766,23 +10899,6 @@ __metadata:
   checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
   languageName: node
   linkType: hard
-
-"project@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "project@workspace:."
-  dependencies:
-    gatsby: ^4.22.0
-    gatsby-plugin-image: ^2.22.0
-    gatsby-plugin-manifest: ^4.22.0
-    gatsby-plugin-sharp: ^4.22.0
-    gatsby-source-filesystem: ^4.22.0
-    gatsby-transformer-sharp: ^4.22.0
-    prettier: ^2.7.1
-    prop-types: ^15.8.1
-    react: ^18.1.0
-    react-dom: ^18.1.0
-  languageName: unknown
-  linkType: soft
 
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
@@ -13273,6 +13389,13 @@ __metadata:
   version: 4.32.1
   resolution: "xstate@npm:4.32.1"
   checksum: c16298b2b3dab7689da99d5b1e5128d2ca3bf381f37c8cb95e4af83bb1044b9251629fc00758f7f31785a72c2ddddd26f602b2801e6068cd78373b7f6dd6c28b
+  languageName: node
+  linkType: hard
+
+"xstate@npm:^4.26.1":
+  version: 4.33.5
+  resolution: "xstate@npm:4.33.5"
+  checksum: 124898d48547cdf46e9d26460fccd0632bd59505f5f1d968a9b21b04580eaa210ac289bb2dcd61a64f837fc4fba15ee20c3dc16b899dd637949c912b25fd0821
   languageName: node
   linkType: hard
 

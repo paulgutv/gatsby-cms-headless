@@ -34,5 +34,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-graphcms',
+      options: {
+        endpoint: process.env.HYGRAPH_ENDPOINT,
+        token: process.env.HYGRAPH_TOKEN,
+      },
+    },
   ],
 }
